@@ -1,0 +1,122 @@
+:root{
+
+    --color-primary-paleblue: hsl(225, 100%, 94%);
+    --color-primary-brightblue:  hsl(245, 75%, 52%);
+
+    --color-neutral-verypaleblue: hsl(225, 100%, 98%);
+    --color-neutral-desaturatedblue: hsl(224, 23%, 55%);
+    --color-neutral-darkblue: hsl(223, 47%, 23%);
+
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+display: flex;
+flex-direction: column;
+height: 100vh;
+justify-content: center;
+align-items: center;
+background: url(images/pattern-background-desktop.svg) repeat-x ;
+background-color: var(--color-primary-paleblue);
+
+
+font-family: 'Red Hat Display', sans-serif;
+
+}
+
+body p{
+    font-size: 16px;
+}
+
+
+
+.card{
+    width: 300px;
+    background-color: white;
+    border-radius: 1rem;
+    
+}
+
+.card__picture img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.5rem;
+}
+.card__content__info{
+    text-align: center;
+}
+.card__content__info p{
+    margin-top: 1em;
+}
+
+.card__content__plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.card__content__plan{
+
+    
+}
+.card__content__plan img{
+    width: auto; 
+    margin-right: .5em;
+}
+
+.card__content__plan__price{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+
+}
+
+.card__content__plan a{
+    color: var(--color-primary-brightblue);
+
+}
+
+
+.card__content__pay{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    gap: 1em;
+}
+.card__content__pay__button-confirm{
+    padding: .5em 0;
+    border-width: 0;
+    border-radius: .5em;
+    background-color: var(--color-primary-brightblue);
+    color: white;
+}
+.card__content__pay__button-cancel{
+    border-width: 0;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
