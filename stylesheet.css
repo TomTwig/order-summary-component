@@ -33,36 +33,30 @@ justify-content: center;
 align-items: center;
 background: url(images/pattern-background-desktop.svg) repeat-x ;
 background-color: var(--color-primary-paleblue);
-
-
 font-family: 'Red Hat Display', sans-serif;
-
 }
 
 body p{
     font-size: 16px;
 }
 
-
-
 .card{
-    width: 300px;
+    max-width: 300px;
     background-color: white;
     border-radius: 1em;
-    
 }
 
 .card__picture img{
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
+
 .card__content{
     display: flex;
     flex-direction: column;
     gap: 1em;
     padding: 2rem;
 }
-
 
 .card__content__info{
     text-align: center;
@@ -81,15 +75,15 @@ body p{
 .card__content__plan{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly; 
 }
+
 .card__content__plan{
 padding: 1em;
 background-color: var(--color-neutral-verypaleblue);
-border-radius: .5em;
-    
+border-radius: .5em;   
 }
+
 .card__content__plan img{
     width: 30px; 
     margin-right: 1em;
@@ -98,28 +92,23 @@ border-radius: .5em;
 .card__content__plan__price{
     display: flex;
     flex-direction: column;
-    flex: 1;
-    
+    flex: 1; 
 }
 .card__content__plan__price p{
-   font-size: 12px;
-    
+   font-size: 12px;  
 }
 
 .card__content__plan__price p:first-child{
 font-weight: 900;
-
 }
 .card__content__plan__price p:last-child{
     font-weight: 500;
-    
     }
 
 .card__content__plan a{
     color: var(--color-primary-brightblue);
     font-size: 12px;
     font-weight: 900;
-
 }
 
 
@@ -129,6 +118,7 @@ font-weight: 900;
     align-items: space-evenly;
     gap: 1em;
 }
+
 .card__content__pay__button-confirm{
     padding: 1em 0;
     border-width: 0;
@@ -137,10 +127,9 @@ font-weight: 900;
     color: white;
     font-weight: 900;
     font-size: .6em;
-
     box-shadow: 0 .5em 10px var(--color-shadow-brightblue);
- 
 }
+
 .card__content__pay__button-cancel{
     border-width: 0;
     background-color: white;
@@ -150,11 +139,17 @@ font-weight: 900;
 
 
 
+@media only screen and (max-width: 375px) {
+
+    .container {
+        padding: 0 1em;
+    }
+    
+    }
 
 
 
 
 
-
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; margin-top: 1em; }
 .attribution a { color: hsl(228, 45%, 44%); }
