@@ -2,11 +2,16 @@
 
     --color-primary-paleblue: hsl(225, 100%, 94%);
     --color-primary-brightblue:  hsl(245, 75%, 52%);
+    --color-shadow-brightblue: hsla(245, 75%, 52%,25%);
 
     --color-neutral-verypaleblue: hsl(225, 100%, 98%);
     --color-neutral-desaturatedblue: hsl(224, 23%, 55%);
     --color-neutral-darkblue: hsl(223, 47%, 23%);
 
+}
+
+.primary-desaturatedblue{
+    color: var(--color-neutral-desaturatedblue);
 }
 
 *{
@@ -43,7 +48,7 @@ body p{
 .card{
     width: 300px;
     background-color: white;
-    border-radius: 1rem;
+    border-radius: 1em;
     
 }
 
@@ -55,13 +60,22 @@ body p{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1.5rem;
+    padding: 2rem;
 }
+
+
 .card__content__info{
     text-align: center;
 }
+
+.card__content__info h1{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
 .card__content__info p{
     margin-top: 1em;
+    font-size: 12px;
 }
 
 .card__content__plan{
@@ -71,23 +85,40 @@ body p{
     
 }
 .card__content__plan{
-
+padding: 1em;
+background-color: var(--color-neutral-verypaleblue);
+border-radius: .5em;
     
 }
 .card__content__plan img{
-    width: auto; 
-    margin-right: .5em;
+    width: 30px; 
+    margin-right: 1em;
 }
 
 .card__content__plan__price{
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 1;
+    
+}
+.card__content__plan__price p{
+   font-size: 12px;
+    
+}
+
+.card__content__plan__price p:first-child{
+font-weight: 900;
 
 }
+.card__content__plan__price p:last-child{
+    font-weight: 500;
+    
+    }
 
 .card__content__plan a{
     color: var(--color-primary-brightblue);
+    font-size: 12px;
+    font-weight: 900;
 
 }
 
@@ -99,15 +130,22 @@ body p{
     gap: 1em;
 }
 .card__content__pay__button-confirm{
-    padding: .5em 0;
+    padding: 1em 0;
     border-width: 0;
     border-radius: .5em;
     background-color: var(--color-primary-brightblue);
     color: white;
+    font-weight: 900;
+    font-size: .6em;
+
+    box-shadow: 0 .5em 10px var(--color-shadow-brightblue);
+ 
 }
 .card__content__pay__button-cancel{
     border-width: 0;
     background-color: white;
+    font-weight: 900;
+    font-size: .6em;
 }
 
 
